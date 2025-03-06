@@ -1,9 +1,9 @@
-import React from 'react'
-import './index.css'
+import React from 'react';
+import './index.css';
 
-const PasswordItem = ({password, onDelete, showPasswords}) => {
+const PasswordItem = ({ password, onDelete, showPasswords }) => {
   return (
-    <div className="password-item" data-testid="password-item">
+    <li className="password-item" data-testid="password-item">
       <div className="password-details">
         <img
           src="https://assets.ccbp.in/frontend/react-js/password-manager-website-img.png"
@@ -49,8 +49,8 @@ const PasswordItem = ({password, onDelete, showPasswords}) => {
           className="delete-icon"
         />
       </button>
-    </div>
-  )
-}
+    </li>
+  );
+};
 
-export default PasswordItem
+export default PasswordItem;

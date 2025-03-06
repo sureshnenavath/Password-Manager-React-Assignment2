@@ -121,12 +121,12 @@ h2 {
 }
 
 .passwords-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
   gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Remove default list bullets */
 }
-
 .no-passwords {
   text-align: center;
   color: #454f84;
@@ -149,4 +149,7 @@ h2 {
     width: 200px;
     margin-bottom: 20px;
   }
+}
+.password-count {
+  color: #454f84;
 }
